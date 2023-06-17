@@ -104,7 +104,8 @@ alias c="clear"
 
 alias cp="cp -i"
 alias mv="mv -i"
-alias rm="rm -i"
+# alias rm="rm -i"
+alias rm="trash-put -i"
 alias ln="ln -i"
 alias mkdir="mkdir -p"
 
@@ -117,8 +118,6 @@ alias python="python3"
 alias src="source"
 alias so="source"
 
-alias sn="shutdown now"
-
 alias ls="exa -a"
 alias lh="exa -lh -a"
 alias ll="exa -abghHliS"
@@ -130,10 +129,11 @@ alias open="xdg-open"
 alias ..="cd .."
 
 alias update="sudo apt update"
-alias upd="sudo apt update"
+# alias upd="sudo apt update"
 alias upgrade="sudo apt upgrade"
-alias upg="sudo apt upgrade"
+# alias upg="sudo apt upgrade"
 alias autoremove="sudo apt autoremove"
+alias install="sudo apt install"
 
 alias cat="bat"
 
@@ -142,7 +142,8 @@ alias mysql="mysql -u root -p"
 alias curlpost="curl -d"
 alias curlput="curl -X PUT -d"
 alias curldelete="curl -X DELETE"
-alias dl="curl -o"
+
+export EDITOR="nvim" 
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
