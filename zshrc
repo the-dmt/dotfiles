@@ -112,8 +112,12 @@ alias mkdir="mkdir -p"
 alias vi="nvim"
 alias vim="nvim"
 alias nv="nvim"
+alias nano="nvim"
 
 alias python="python3"
+alias mkenv="python3 -m venv venv"
+alias startenv="source venv/bin/activate"
+alias stopenv"deactivate"
 
 alias src="source"
 alias so="source"
