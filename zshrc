@@ -117,7 +117,7 @@ alias nano="nvim"
 alias python="python3"
 alias mkenv="python3 -m venv venv"
 alias startenv="source venv/bin/activate"
-alias stopenv"deactivate"
+alias stopenv="deactivate"
 
 alias src="source"
 alias so="source"
