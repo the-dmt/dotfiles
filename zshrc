@@ -146,6 +146,7 @@ alias mysql="mysql -u root -p"
 alias curlpost="curl -d"
 alias curlput="curl -X PUT -d"
 alias curldelete="curl -X DELETE"
+alias dl="curl -o"
 
 export EDITOR="nvim" 
 
@@ -160,3 +161,9 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(zoxide init bash)"
 eval $(thefuck --alias)
 eval $(thefuck --alias FUCK)
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+source /home/dmt/.config/broot/launcher/bash/br
