@@ -140,6 +140,7 @@ alias stopenv="deactivate"
 # Tmux. aliases
 alias t="tmux"
 alias tm="tmux"
+alias tk="tmux kill-session -t 0"
 
 alias nf="neofetch"
 
