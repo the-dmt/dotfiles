@@ -110,15 +110,18 @@ source $ZSH/oh-my-zsh.sh
 alias so="source"
 
 # Nvim aliases
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
+# alias v="nvim"
+# alias vi="nvim"
+# alias vim="nvim"
 alias nv="nvim"
 #alias nano="nvim"
 
 # Python aliases
 alias python="python3"
 alias pip="pip3"
+alias mkenv="python3 -m venv venv"
+alias startenv="source venv/bin/activate"
+alias stopenv="deactivate"
 
 # Use lsd instead of ls
 alias ls="lsd"
@@ -132,17 +135,12 @@ alias cls="clear"
 # Alias cat to bat
 alias cat="bat"
 
-# Virtual env aliases
-alias mkenv="python3 -m venv venv"
-alias startenv="source venv/bin/activate"
-alias stopenv="deactivate"
-
 # Tmux. aliases
 alias t="tmux"
 alias tm="tmux"
 alias tk="tmux kill-session -t 0"
 
-alias nf="neofetch"
+alias ff="fastfetch"
 
 # Dislpay the date
 alias td='date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"'
@@ -151,17 +149,11 @@ alias ts='date "+%s"'
 # Open mpv the way i want
 # alias mpv="mpv --mute=yes --loop=yes --fullscreen=yes"
 
-# Apps
-alias marktext="/Applications/MarkText.app/Contents/MacOS/MarkText"
-
-# Random wallpaper generator
-alias rw="random_wallpaper"
-
 # Show public ip address
 alias pubip="curl ifconfig.me; echo"
 
 # Open .zshrc easilly
-alias nz="nv ~/.zshrc"
+alias vz="vim ~/.zshrc"
 
 # Source .zshrc easilly
 alias sz="so ~/.zshrc"
@@ -182,8 +174,8 @@ export PATH=$PATH:/Users/dion/shell_scripts
 # Export my python scripts to PATH
 export PATH=$PATH:/Users/dion/python_scripts
 
-# Set default editor to neovim
-export VISUAL=nvim
+# Set default editor to vim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 eval $(thefuck --alias)
