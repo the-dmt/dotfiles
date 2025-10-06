@@ -4,7 +4,7 @@ set number
 set relativenumber
 set ignorecase
 set smartcase
-set wrap
+set nowrap
 
 set background=dark
 syntax on
