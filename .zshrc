@@ -158,6 +158,17 @@ alias vz="vim ~/.zshrc"
 # Source .zshrc easilly
 alias sz="so ~/.zshrc"
 
+# Directory navigation
+if command -v zoxide >/dev/null 2>&1; then
+    zD="z Downloads"
+    zd="z Documents"
+    zc="z ~/.config"
+else
+    zD="cd Downloads"
+    zd="cd Documents"
+    zc="cd ~/.config"
+fi
+
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   # exec tmux
 # fi
