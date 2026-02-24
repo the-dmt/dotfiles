@@ -18,7 +18,7 @@ alias lf="l $1 | fzf"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias ln="ln -i"
+alias ln="ln -si"
 
 alias mkdir="mkdir -p"
 
