@@ -36,6 +36,7 @@ alias myip="curl ifconfig.me; echo"
 alias usage="du -h -d1"
 alias wttr="curl wttr.in"
 alias ff="fastfetch"
+alias smh="history | fzf"
 
 if [[ $(uname) == 'darwin' ]]; then
 	  alias history="history 1"
@@ -61,7 +62,6 @@ eval "$(zoxide init zsh)"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
 HISTDB_TABULATE_CMD=(sed -e $'s/\x1f/\t/g')
 
