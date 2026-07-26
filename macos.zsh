@@ -31,6 +31,10 @@ alias stopenv="deactivate"
 
 alias sqlite="sqlite3"
 
+# Tmux
+alias tls="tmux ls"
+alias tkill="tmux kill-session -t 0"
+
 # Misc.
 alias myip="curl ifconfig.me; echo"
 alias usage="du -h -d1"
