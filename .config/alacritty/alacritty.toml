@@ -1,0 +1,33 @@
+[window]
+opacity = 0.95
+blur = true
+
+[window.dimensions]
+columns = 175
+lines = 45
+
+[window.padding]
+x = 4
+y = 4
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMonoNerdFontMono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMonoNerdFontMono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMonoNerdFontMono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMonoNerdFontMono"
+style = "Bold Italic"
+
+[general]
+import = ["/home/dion/alacritty-master/dracula.toml"]
