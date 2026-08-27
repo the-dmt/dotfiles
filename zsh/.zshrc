@@ -108,6 +108,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+alias nv="nvim"
+alias so="source"
+
+# tmux
+alias tm="tmux"
+alias t="tmux"
+alias tls="tmux list-sessions"
+alias tkill="tmux kill-session -t 0"
+alias ta="tmux attach"
+alias td="tmux detach"
+
 eval "$(zoxide init zsh)"
 
 bindkey -v
