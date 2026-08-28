@@ -16,7 +16,7 @@ config.font_size = 15
 config.line_height = 1.15
 config.cell_width = 1.0
 
-config.color_scheme = 'Tomorrow Night'
+config.color_scheme = 'Kanagawa (Gogh)'
 
 config.window_background_opacity = 1.0
 
