@@ -1,8 +1,16 @@
 {
   "plugins": {
+    "gruvbox.nvim": {
+      "rev": "c14c475585494c592ef48064ad338424f15f8bad",
+      "src": "https://gitlab.com/motaz-shokry/gruvbox.nvim"
+    },
     "kanagawa.nvim": {
       "rev": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3",
       "src": "https://github.com/rebelot/kanagawa.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason.nvim": {
       "rev": "16ba83bfc8a25f52bb545134f5bee082b195c460",
@@ -23,6 +31,14 @@
     "nvim-surround": {
       "rev": "2e93e154de9ff326def6480a4358bfc149d5da2c",
       "src": "https://github.com/kylechui/nvim-surround"
+    },
+    "nvim-treesitter": {
+      "rev": "a1bcffc8095c142ad1f7a9671a4ae180333f9209",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     }
   }
 }
