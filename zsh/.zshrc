@@ -139,3 +139,4 @@ export PATH=/Users/dion/.opencode/bin:$PATH
 export PATH="$PATH:/Users/dion/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="/Applications/Cursor.app/Contents/Resources/app/bin:$PATH"
