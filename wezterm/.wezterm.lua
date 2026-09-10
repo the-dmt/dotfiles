@@ -7,34 +7,28 @@ local config = wezterm.config_builder()
 config.term = "xterm-256color"
 
 -- For example, changing the initial geometry for new windows:
-config.initial_cols = 120
-config.initial_rows = 32
+config.initial_cols = 100
+config.initial_rows = 25
 
-config.window_padding = {
-  left = 20,
-  right = 20,
-  top = 20,
-  bottom = 20,
-}
-
+-- config.window_padding = {
+--   left = 20,
+--   right = 20,
+--   top = 20,
+--   bottom = 20,
+-- }
+--
 config.color_scheme = 'Kanagawa (Gogh)'
 
 config.font =  wezterm.font 'JetBrains Mono'
-config.font_size = 14
+config.font_size = 15
 config.line_height = 1.2
 config.cell_width = 1.0
-config.foreground_text_hsb = {
-  hue = 1.2,
-  saturation = 1.2,
-  brightness = 1.2,
-}
 
 -- config.window_background_opacity = 0.9
 -- config.macos_window_background_blur = 20
 -- config.wayland_window_background_blur = true
 
-
-config.native_macos_fullscreen_mode = false
+-- config.native_macos_fullscreen_mode = false
 
 config.animation_fps = 1
 config.cursor_blink_ease_in = 'Constant'
