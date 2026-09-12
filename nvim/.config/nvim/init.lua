@@ -95,12 +95,21 @@ map("n", "<S-TAB>", ":bprevious<CR>")
 -- ToggleTerm
 map("n", "<leader>'", ":ToggleTerm direction=float<CR>")
 
+-- Plugins
 vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/hrsh7th/nvim-cmp",
     "https://github.com/nvim-mini/mini.nvim",
+    "https://github.com/lewis6991/gitsigns.nvim",
+    {
+        src = "https://github.com/nvim-treesitter/nvim-treesitter",
+        branch = "main",
+        build = ":TSUpdate"
+    }
 })
 
-cmd.colorscheme("habamax")
+-- Plugin Configs
 
+-- Colorscheme
+cmd.colorscheme("habamax")

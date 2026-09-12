@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "gitsigns.nvim": {
+      "rev": "f2421c550618d257048afa650413d9e542ddbe67",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
     "gruvbox.nvim": {
       "rev": "c14c475585494c592ef48064ad338424f15f8bad",
       "src": "https://gitlab.com/motaz-shokry/gruvbox.nvim"
