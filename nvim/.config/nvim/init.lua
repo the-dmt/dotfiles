@@ -47,7 +47,7 @@ o.writebackup = false
 
 o.showtabline = 1
 
-o.iskeyword:append("_")
+o.iskeyword:append("-")
 
 o.winborder = "rounded"
 
@@ -83,6 +83,7 @@ map("n", "<leader>re", ":restart<CR>")
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
+-- Move cursor at beginning of line when moving to top/bottom of page
 map("n", "gg", "gg0")
 map("n", "G", "G0")
 
