@@ -99,8 +99,7 @@ vim.pack.add({
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/hrsh7th/nvim-cmp",
     "https://github.com/nvim-mini/mini.nvim",
-    "https://github.com/rebelot/kanagawa.nvim"
 })
 
-cmd.colorscheme("kanagawa")
+cmd.colorscheme("habamax")
 
