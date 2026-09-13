@@ -55,6 +55,8 @@ if [[ $(uname) == 'darwin' ]]; then
     export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
 fi
 
+export EDITOR="/usr/bin/nvim"
+
 eval $(thefuck --alias)
 
 export PYENV_ROOT="$HOME/.pyenv"
