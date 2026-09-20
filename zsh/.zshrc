@@ -3,7 +3,6 @@ case "$OSTYPE" in
   darwin*)
     # Homebrew (Apple Silicon path; use /usr/local/bin/brew on Intel Macs)
     [[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
-    alias ls='ls -G'
     alias history="history 1"
 
     # Use GNU sed on Mac
@@ -16,10 +15,11 @@ case "$OSTYPE" in
     export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
     ;;
   linux*)
-    alias ls='ls --color=auto'
     alias open='xdg-open'
     ;;
 esac
+
+bindkey -v
 
 # ---- Machine-local overrides (keep out of git) ----
 [[ -f ~/.local.zsh ]] && source ~/.local.zsh
@@ -121,3 +121,6 @@ fi
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
+
+# opencode
+export PATH=/Users/dion/.opencode/bin:$PATH
