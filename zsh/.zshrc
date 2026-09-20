@@ -1,3 +1,29 @@
+# ---- OS-specific ----
+case "$OSTYPE" in
+  darwin*)
+    # Homebrew (Apple Silicon path; use /usr/local/bin/brew on Intel Macs)
+    [[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+    alias ls='ls -G'
+    alias history="history 1"
+
+    # Use GNU sed on Mac
+    alias sed="gsed"
+
+    alias Photos="$HOME/Pictures/"
+    alias Videos="$HOME/Movies/"
+
+    alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+    export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
+    ;;
+  linux*)
+    alias ls='ls --color=auto'
+    alias open='xdg-open'
+    ;;
+esac
+
+# ---- Machine-local overrides (keep out of git) ----
+[[ -f ~/.local.zsh ]] && source ~/.local.zsh
+
 alias so="source"
 alias s="source"
 
@@ -41,19 +67,6 @@ alias usage="du -h -d1"
 alias wttr="curl wttr.in"
 alias ff="fastfetch"
 alias smh="history | fzf"
-
-if [[ $(uname) == 'darwin' ]]; then
-	  alias history="history 1"
-
-    # Use GNU sed on Mac
-    alias sed="gsed"
-
-    alias Photos="$HOME/Pictures/"
-    alias Videos="$HOME/Movies/"
-
-    alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-    export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
-fi
 
 export EDITOR="/usr/bin/nvim"
 
