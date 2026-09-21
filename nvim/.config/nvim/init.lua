@@ -74,6 +74,8 @@ map("n", "<C-l>", "<C-w>l")
 
 -- Quick write
 map("n", "<leader>w", ":w<CR>")
+-- Quick exit
+map("n", "<leader>q", ":q<CR>")
 -- Quick source
 map("n", "<leader>so", ":so<CR>")
 -- Quick restart
