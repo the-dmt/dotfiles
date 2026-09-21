@@ -12,6 +12,9 @@ case "$OSTYPE" in
     alias Videos="$HOME/Movies/"
 
     alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+    eval $(thefuck --alias)
+
     export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
     ;;
   linux*)
@@ -69,8 +72,6 @@ alias ff="fastfetch"
 alias smh="history | fzf"
 
 export EDITOR="/usr/bin/nvim"
-
-eval $(thefuck --alias)
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
