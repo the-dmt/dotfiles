@@ -14,6 +14,7 @@ case "$OSTYPE" in
     alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
     export PATH=${PATH}:/usr/local/mysql-9.5.0-macos15-arm64/bin
     source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+    chruby ruby-3.4.1
     ;;
   linux*)
     alias open='xdg-open'
@@ -99,8 +100,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-chruby ruby-3.4.1
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
