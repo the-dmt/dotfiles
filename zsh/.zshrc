@@ -129,3 +129,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 fpath+=($HOME/.zsh/pure)
+
+autoload -U promptinit; promptinit
+prompt pure
