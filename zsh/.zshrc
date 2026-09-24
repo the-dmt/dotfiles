@@ -127,3 +127,5 @@ export PATH=/Users/dion/.opencode/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+fpath+=($HOME/.zsh/pure)
