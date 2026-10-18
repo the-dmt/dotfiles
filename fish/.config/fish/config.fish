@@ -18,13 +18,13 @@ set fish_color_cwd green
 
 set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/dion/.lmstudio/bin
-# End of LM Studio CLI section
+fish_add_path $HOME/.local/bin
+
+fish_add_path $HOME/.opencode/bin:$PATH
 
 set -gx EDITOR nvim
 
-set -gx PATH $PATH /Users/dion/.opencode/bin:$PATH
+# set -gx PATH $PATH /Users/dion/.opencode/bin:$PATH
 
 if status is-interactive
     set -g fish_greeting
