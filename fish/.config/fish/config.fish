@@ -20,7 +20,7 @@ set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
 
 fish_add_path $HOME/.local/bin
 
-fish_add_path $HOME/.opencode/bin:$PATH
+fish_add_path $HOME/.opencode/bin
 
 set -gx EDITOR nvim
 
