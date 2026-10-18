@@ -22,7 +22,7 @@ set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
 set -gx PATH $PATH /Users/dion/.lmstudio/bin
 # End of LM Studio CLI section
 
-set -gx editor nvim
+set -gx EDITOR nvim
 
 set -gx PATH $PATH /Users/dion/.opencode/bin:$PATH
 
