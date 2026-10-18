@@ -24,7 +24,7 @@ set -gx PATH $PATH /Users/dion/.lmstudio/bin
 
 set -gx editor nvim
 
-export PATH=/Users/dion/.opencode/bin:$PATH
+set -gx PATH $PATH /Users/dion/.opencode/bin:$PATH
 
 if status is-interactive
     set -g fish_greeting
