@@ -1,2 +1,6 @@
+onboarding = false
+
 [keys]
 prefix = "ctrl+j"
+split_horizontal = "prefix+minus"
+split_vertical = "prefix+pipe"

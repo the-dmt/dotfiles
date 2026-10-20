@@ -1,0 +1,23 @@
+2026-10-20T22:19:30.218532Z  INFO herdr::server::headless::bootstrap: server using persistent user service context
+2026-10-20T22:19:30.218625Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-10-20T22:19:30.219105Z  INFO herdr::api::server: api server listening path=/Users/dion/.config/herdr/herdr.sock
+2026-10-20T22:19:30.219690Z  INFO herdr::persist::io: session file is missing event="persist.restore" subsystem="persist" outcome="missing" path=/Users/dion/.config/herdr/session.json
+2026-10-20T22:19:30.219709Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-10-20T22:19:30.254248Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-20T22:19:30.254707Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=40 cols=120 scrollback_limit_bytes=10000000
+2026-10-20T22:19:30.256450Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=2130
+2026-10-20T22:19:30.256679Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-10-20T22:19:30.256687Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-10-20T22:19:30.256693Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-10-20T22:19:30.256697Z  INFO herdr::server::headless::bootstrap: created startup workspace cwd=/Users/dion/dotfiles
+2026-10-20T22:19:30.256788Z  INFO herdr::server::headless: client protocol socket listening path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-20T22:19:30.256808Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/Users/dion/.config/herdr/herdr.sock client_socket=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-20T22:19:30.256894Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=2119
+2026-10-20T22:19:30.318392Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.9.5"
+2026-10-20T22:19:30.379646Z  INFO herdr::server::headless: client connected client_id=2 cols=136 rows=44 cell_width_px=18 cell_height_px=40 surface_active=true render_encoding=SemanticFrame
+2026-10-20T22:19:31.214542Z  INFO herdr::update: auto-update check: v0.9.5 available through Homebrew, waiting for explicit install
+2026-10-20T22:19:35.268795Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001792534775260521000-2119-0.json
+2026-10-20T22:19:35.268884Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-20T22:19:35.929172Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="claude"
+2026-10-20T22:19:35.940388Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="opencode"
+2026-10-20T22:19:52.761900Z  INFO herdr::server::headless: client detached client_id=2
