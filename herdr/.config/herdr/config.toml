@@ -2,5 +2,5 @@ onboarding = false
 
 [keys]
 prefix = "ctrl+j"
-split_horizontal = "prefix+minus"
+split_horizontal = "prefix+-"
 split_vertical = "prefix+|"
