@@ -7,6 +7,7 @@ alias l="lsd -l"
 alias la="lsd -la"
 alias python="python3"
 alias pip="pip3"
+alias mkdir="mkdir -p"
 
 # colors
 set fish_color_command green
