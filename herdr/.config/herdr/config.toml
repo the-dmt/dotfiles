@@ -4,3 +4,7 @@ onboarding = false
 prefix = "ctrl+j"
 # split_horizontal = "prefix+-"
 # split_vertical = "prefix+|"
+
+[theme]
+name = "gruvbox"
+auto_switch = false
