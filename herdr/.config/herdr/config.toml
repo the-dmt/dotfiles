@@ -8,3 +8,6 @@ prefix = "ctrl+j"
 [theme]
 name = "gruvbox"
 auto_switch = false
+
+[ui]
+prompt_new_tab_name = false
