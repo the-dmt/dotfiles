@@ -3,53 +3,83 @@
   "workspaces": [
     {
       "id": "w7",
-      "custom_name": null,
+      "custom_name": "testhub",
       "identity_cwd": "/Users/dion/coding/testhub",
       "public_pane_numbers": {
-        "5": 2,
-        "4": 1
+        "2": 3,
+        "1": 1
       },
-      "next_public_pane_number": 3,
+      "next_public_pane_number": 4,
       "public_tab_numbers": [
         1,
-        2
+        3
       ],
-      "next_public_tab_number": 3,
+      "next_public_tab_number": 4,
       "tabs": [
         {
           "custom_name": null,
           "layout": {
-            "Pane": 4
+            "Pane": 1
           },
           "panes": {
-            "4": {
+            "1": {
               "cwd": "/Users/dion/coding/testhub"
             }
           },
           "zoomed": false,
-          "focused": 4,
-          "root_pane": 4
+          "focused": 1,
+          "root_pane": 1
         },
+        {
+          "custom_name": "foo",
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/Users/dion/coding/testhub"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w8",
+      "custom_name": "dotfiles",
+      "identity_cwd": "/Users/dion/dotfiles",
+      "public_pane_numbers": {
+        "3": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
         {
           "custom_name": null,
           "layout": {
-            "Pane": 5
+            "Pane": 3
           },
           "panes": {
-            "5": {
-              "cwd": "/Users/dion/coding/testhub"
+            "3": {
+              "cwd": "/Users/dion/dotfiles"
             }
           },
           "zoomed": false,
-          "focused": 5,
-          "root_pane": 5
+          "focused": 3,
+          "root_pane": 3
         }
       ],
-      "active_tab": 1
+      "active_tab": 0
     }
   ],
-  "active": 0,
-  "selected": 0,
+  "active": 1,
+  "selected": 1,
   "sidebar_width": null,
   "sidebar_section_split": null,
   "collapsed_space_keys": []
