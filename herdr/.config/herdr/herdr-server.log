@@ -528,3 +528,160 @@
 2026-10-26T00:46:35.342254Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
 2026-10-26T00:46:35.363284Z  INFO herdr::pane: pane session terminated pane=4 pid=2890 signal=Hangup
 2026-10-26T00:46:35.364599Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=1118
+2026-10-27T22:10:22.193368Z  INFO herdr::server::headless::bootstrap: server using persistent user service context
+2026-10-27T22:10:22.194193Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-10-27T22:10:22.195496Z  INFO herdr::api::server: api server listening path=/Users/dion/.config/herdr/herdr.sock
+2026-10-27T22:10:22.205150Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-27T22:10:22.209873Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1177
+2026-10-27T22:10:22.210834Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-27T22:10:22.212563Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1178
+2026-10-27T22:10:22.213794Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-10-27T22:10:22.214596Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-10-27T22:10:22.247593Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-27T22:10:22.250174Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/Users/dion/vibe-coding/personal-website
+2026-10-27T22:10:22.250528Z  INFO herdr::server::headless: client protocol socket listening path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-27T22:10:22.251241Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/Users/dion/.config/herdr/herdr.sock client_socket=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-27T22:10:22.252647Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1176
+2026-10-27T22:10:22.354101Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.9.5"
+2026-10-27T22:10:22.507775Z  INFO herdr::server::headless: client connected client_id=2 cols=158 rows=44 cell_width_px=18 cell_height_px=40 surface_active=true render_encoding=SemanticFrame
+2026-10-27T22:10:23.270749Z  INFO herdr::update: auto-update check: v0.9.5 available through Homebrew, waiting for explicit install
+2026-10-27T22:11:11.761132Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:11:15.087895Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:11:16.373542Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:11:16.373671Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:11:17.687508Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:11:17.687658Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:11:22.705071Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001793139082693968000-1176-0.json
+2026-10-27T22:11:22.705184Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:11:26.078460Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(1922)
+2026-10-27T22:11:42.381796Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(OpenCode) agent=None pgid=Some(1177)
+2026-10-27T22:12:18.549434Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(2112)
+2026-10-27T22:12:48.436824Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(OpenCode) agent=None pgid=Some(1177)
+2026-10-27T22:12:56.971169Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(2196)
+2026-10-27T22:23:34.403296Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:23:34.404465Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:23:38.743087Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:23:38.743226Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:23:43.747801Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:25:57.593717Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(2196)
+2026-10-27T22:26:02.491447Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:26:51.631552Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(OpenCode) agent=None pgid=Some(1177)
+2026-10-27T22:26:56.342153Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001793140016333088000-1176-0.json
+2026-10-27T22:26:56.344229Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:27:11.783166Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:27:11.783325Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:27:16.787616Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:27:23.520797Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:27:23.520940Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:27:27.817217Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(2630)
+2026-10-27T22:27:28.524397Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:27:37.723490Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(OpenCode) process=opencode pgid=Some(2630)
+2026-10-27T22:27:42.621858Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:31:48.485593Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:31:48.486143Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:31:53.488779Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:32:51.346186Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:32:51.347404Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:32:55.185857Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:32:55.186027Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-27T22:32:57.109401Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:32:57.109525Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-27T22:33:02.113383Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:33:21.877233Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(OpenCode) agent=None pgid=Some(1177)
+2026-10-27T22:33:26.578933Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:33:27.033054Z  INFO herdr::server::headless: client detached client_id=2
+2026-10-27T22:33:43.850810Z  INFO herdr::server::headless::lifecycle: server shutdown initiated
+2026-10-27T22:33:43.905986Z  INFO herdr::server::headless::lifecycle: completing server shutdown
+2026-10-27T22:33:43.908271Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-27T22:33:43.908341Z  INFO herdr::server::headless: headless server exiting
+2026-10-27T22:33:43.911921Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-10-27T22:33:43.933633Z  INFO herdr::pane: pane session terminated pane=2 pid=1178 signal=Hangup
+2026-10-27T22:33:43.938045Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-10-27T22:33:43.959622Z  INFO herdr::pane: pane session terminated pane=1 pid=1177 signal=Hangup
+2026-10-27T22:33:43.961727Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=1176
+2026-10-28T04:31:04.239541Z  INFO herdr::server::headless::bootstrap: server using persistent user service context
+2026-10-28T04:31:04.240369Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-10-28T04:31:04.241593Z  INFO herdr::api::server: api server listening path=/Users/dion/.config/herdr/herdr.sock
+2026-10-28T04:31:04.250873Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-28T04:31:04.255350Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1233
+2026-10-28T04:31:04.256304Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-28T04:31:04.257570Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1234
+2026-10-28T04:31:04.258394Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-10-28T04:31:04.258570Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-10-28T04:31:04.293046Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-28T04:31:04.295026Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/Users/dion/coding/tuts/python-ai
+2026-10-28T04:31:04.295286Z  INFO herdr::server::headless: client protocol socket listening path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T04:31:04.296011Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/Users/dion/.config/herdr/herdr.sock client_socket=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T04:31:04.297401Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1231
+2026-10-28T04:31:04.392476Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.9.5"
+2026-10-28T04:31:04.552325Z  INFO herdr::server::headless: client connected client_id=2 cols=158 rows=44 cell_width_px=18 cell_height_px=40 surface_active=true render_encoding=SemanticFrame
+2026-10-28T04:31:05.251678Z  INFO herdr::update: auto-update check: v0.9.5 available through Homebrew, waiting for explicit install
+2026-10-28T04:31:12.909096Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T04:31:14.145819Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-28T04:31:14.145958Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-28T04:31:19.165873Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001793161879150180000-1231-0.json
+2026-10-28T04:31:19.167533Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T04:31:24.814765Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T04:31:24.815784Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T04:31:29.820077Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T04:31:38.971373Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Cursor) process=cursor pgid=Some(2112)
+2026-10-28T04:31:40.179811Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Cursor) agent=None pgid=Some(1233)
+2026-10-28T05:10:55.201900Z  INFO herdr::server::headless: client detached client_id=2
+2026-10-28T05:11:12.108797Z  INFO herdr::server::headless::lifecycle: server shutdown initiated
+2026-10-28T05:11:12.163930Z  INFO herdr::server::headless::lifecycle: completing server shutdown
+2026-10-28T05:11:12.236969Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001793164272166239000-1231-0.json
+2026-10-28T05:11:12.241453Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T05:11:12.241483Z  INFO herdr::server::headless: headless server exiting
+2026-10-28T05:11:12.244824Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-10-28T05:11:12.266474Z  INFO herdr::pane: pane session terminated pane=2 pid=1234 signal=Hangup
+2026-10-28T05:11:12.269782Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-10-28T05:11:12.292148Z  INFO herdr::pane: pane session terminated pane=1 pid=1233 signal=Hangup
+2026-10-28T05:11:12.292994Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=1231
+2026-10-28T21:34:13.114580Z  INFO herdr::server::headless::bootstrap: server using persistent user service context
+2026-10-28T21:34:13.115425Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-10-28T21:34:13.116758Z  INFO herdr::api::server: api server listening path=/Users/dion/.config/herdr/herdr.sock
+2026-10-28T21:34:13.126807Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-28T21:34:13.131174Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=982
+2026-10-28T21:34:13.132206Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-10-28T21:34:13.133635Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=983
+2026-10-28T21:34:13.137536Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-10-28T21:34:13.137735Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-10-28T21:34:13.172003Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-28T21:34:13.174412Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/Users/dion
+2026-10-28T21:34:13.174752Z  INFO herdr::server::headless: client protocol socket listening path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T21:34:13.175463Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/Users/dion/.config/herdr/herdr.sock client_socket=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T21:34:13.176909Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=980
+2026-10-28T21:34:13.272267Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.9.5"
+2026-10-28T21:34:13.433140Z  INFO herdr::server::headless: client connected client_id=2 cols=158 rows=44 cell_width_px=18 cell_height_px=40 surface_active=true render_encoding=SemanticFrame
+2026-10-28T21:34:14.124200Z  INFO herdr::update: auto-update check: v0.9.5 available through Homebrew, waiting for explicit install
+2026-10-28T21:34:53.900773Z  INFO herdr::server::headless: client detached client_id=2
+2026-10-28T21:45:04.989815Z  INFO herdr::server::headless: client connected client_id=4 cols=158 rows=44 cell_width_px=18 cell_height_px=40 surface_active=true render_encoding=SemanticFrame
+2026-10-28T21:45:09.019259Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-28T21:45:09.019890Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t4"
+2026-10-28T21:45:10.236096Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:45:10.236227Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:45:15.242505Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T21:45:55.977270Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=44 cols=158 scrollback_limit_bytes=10000000
+2026-10-28T21:45:55.983055Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=2299
+2026-10-28T21:45:55.983359Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:46:01.002493Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json backup_path=/Users/dion/.config/herdr/session-snapshots/session-000000000000000000001793223960991159000-980-0.json
+2026-10-28T21:46:01.002616Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T21:46:02.613890Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:46:02.613983Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:46:04.062288Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=44 cols=79 scrollback_limit_bytes=10000000
+2026-10-28T21:46:04.068331Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=2512
+2026-10-28T21:46:04.068638Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w7" tab_id="w7:t1"
+2026-10-28T21:46:09.073921Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T21:46:10.452042Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-10-28T21:46:10.475455Z  INFO herdr::pane: pane session terminated pane=4 pid=2512 signal=Hangup
+2026-10-28T21:46:10.477588Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-10-28T21:46:15.479785Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T21:46:33.413843Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=1
+2026-10-28T21:46:41.970754Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=44 cols=79 scrollback_limit_bytes=10000000
+2026-10-28T21:46:41.975939Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=2726
+2026-10-28T21:46:41.976608Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w8" pane_id=5
+2026-10-28T21:46:41.976649Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-10-28T21:46:41.976664Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w8" tab_id="w8:t1"
+2026-10-28T21:46:46.981122Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=2
+2026-10-28T21:46:53.479401Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w8"
+2026-10-28T21:46:58.483131Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/dion/.config/herdr/session.json workspaces=2

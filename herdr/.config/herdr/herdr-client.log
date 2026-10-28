@@ -61,3 +61,18 @@
 2026-10-26T00:04:48.042920Z  INFO herdr::client: connecting to server path=/Users/dion/.config/herdr/herdr-client.sock
 2026-10-26T00:04:48.257786Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
 2026-10-26T00:35:59.541746Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1117
+2026-10-27T22:10:22.292670Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1175
+2026-10-27T22:10:22.292819Z  INFO herdr::client: connecting to server path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-27T22:10:22.507791Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-27T22:33:27.034916Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1175
+2026-10-28T04:31:04.340374Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1230
+2026-10-28T04:31:04.340504Z  INFO herdr::client: connecting to server path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T04:31:04.552353Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-28T05:10:55.203796Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1230
+2026-10-28T21:34:13.211920Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=979
+2026-10-28T21:34:13.212077Z  INFO herdr::client: connecting to server path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T21:34:13.433192Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-28T21:34:53.901416Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=979
+2026-10-28T21:45:04.813330Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2297
+2026-10-28T21:45:04.813602Z  INFO herdr::client: connecting to server path=/Users/dion/.config/herdr/herdr-client.sock
+2026-10-28T21:45:04.989860Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3

@@ -1,0 +1,69 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w7",
+      "custom_name": "testhub",
+      "identity_cwd": "/Users/dion/coding/tuts/python-ai",
+      "public_pane_numbers": {
+        "3": 5,
+        "2": 4,
+        "1": 1
+      },
+      "next_public_pane_number": 6,
+      "public_tab_numbers": [
+        1,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Pane": 3
+              }
+            }
+          },
+          "panes": {
+            "3": {
+              "cwd": "/Users/dion/coding/tuts/python-ai"
+            },
+            "1": {
+              "cwd": "/Users/dion/coding/tuts/python-ai"
+            }
+          },
+          "zoomed": false,
+          "focused": 3,
+          "root_pane": 1
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/Users/dion/coding/tuts/python-ai"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": null,
+  "sidebar_section_split": null,
+  "collapsed_space_keys": []
+}
