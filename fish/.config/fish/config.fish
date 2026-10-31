@@ -11,12 +11,12 @@ alias mkdir="mkdir -p"
 alias cp="cp -r"
 
 # colors
-set fish_color_command green
-set fish_color_error red
-set fish_color_qoute yellow
-set fish_color_user blue 
-set fish_color_host blue 
-set fish_color_cwd green 
+# set fish_color_command green
+# set fish_color_error red
+# set fish_color_qoute yellow
+# set fish_color_user blue 
+# set fish_color_host blue 
+# set fish_color_cwd green 
 
 set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
 
