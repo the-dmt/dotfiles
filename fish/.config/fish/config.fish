@@ -39,4 +39,4 @@ end
 zoxide init fish | source
 thefuck --alias | source
 
-source ~/dotfiles/fish/conf.d/safety.fish
+source ~/dotfiles/fish/.config/fish/conf.d/safety.fish
