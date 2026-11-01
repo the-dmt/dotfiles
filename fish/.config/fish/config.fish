@@ -1,4 +1,4 @@
-#aliases 
+#aliases
 alias so="source"
 alias nv="nvim"
 alias nano="nvim"
@@ -14,9 +14,9 @@ alias cp="cp -r"
 # set fish_color_command green
 # set fish_color_error red
 # set fish_color_qoute yellow
-# set fish_color_user blue 
-# set fish_color_host blue 
-# set fish_color_cwd green 
+# set fish_color_user blue
+# set fish_color_host blue
+# set fish_color_cwd green
 
 set -x THEFUCK_OVERRIDDEN_ALIASES 'gsed,git'
 
@@ -32,6 +32,7 @@ if status is-interactive
     set -g fish_greeting
 
     abbr --add gs 'git status'
+    abbr --add ga 'git add'
     abbr --add gc 'git commit'
     abbr --add gp 'git push'
 end
