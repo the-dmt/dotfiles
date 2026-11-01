@@ -164,7 +164,7 @@ require("lazy").setup({
     config = function()
       require("gruvbox").setup({
         contrast = "", -- "hard", "soft", or "" for the default
-        transparent_mode = true,
+        transparent_mode = false,
         italic = {
           strings = false,
           comments = true,
