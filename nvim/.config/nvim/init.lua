@@ -140,3 +140,120 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.softtabstop = 4
   end,
 })
+
+-- Plugins (lazy.nvim)
+-- Bootstrap the plugin manager on first launch
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local out = vim.fn.system({
+    "git", "clone", "--filter=blob:none", "--branch=stable",
+    "https://github.com/folke/lazy.nvim.git", lazypath,
+  })
+  if vim.v.shell_error ~= 0 then
+    error("Failed to clone lazy.nvim:\n" .. out)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+  -- Gruvbox colorscheme (loaded first so the theme applies at startup)
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("gruvbox").setup({
+        contrast = "", -- "hard", "soft", or "" for the default
+        transparent_mode = false,
+        italic = {
+          strings = false,
+          comments = true,
+        },
+      })
+      vim.o.background = "dark" -- use "light" for the light variant
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
+
+  -- Treesitter: better syntax highlighting, indentation, and text objects
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    build = ":TSUpdate",
+    event = { "BufReadPost", "BufNewFile" },
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        ensure_installed = {
+          "bash", "c", "css", "html", "javascript", "json", "lua", "markdown",
+          "markdown_inline", "python", "query", "regex", "tsx", "typescript",
+          "vim", "vimdoc", "yaml",
+        },
+        auto_install = true, -- install parsers for new filetypes on demand
+        highlight = { enable = true },
+        indent = { enable = true },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = "<C-space>",
+            node_incremental = "<C-space>",
+            node_decremental = "<BS>",
+          },
+        },
+      })
+    end,
+  },
+
+  -- Telescope: fuzzy finder for files, text, buffers, and more
+  {
+    "nvim-telescope/telescope.nvim",
+    branch = "0.1.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      -- Native sorter for speed (needs `make`; skipped if unavailable)
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        build = "make",
+        cond = function()
+          return vim.fn.executable("make") == 1
+        end,
+      },
+    },
+    cmd = "Telescope",
+    keys = {
+      { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
+      { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep in project" },
+      { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Find buffers" },
+      { "<leader>fr", "<cmd>Telescope oldfiles<CR>", desc = "Recent files" },
+      { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Help tags" },
+      { "<leader>fd", "<cmd>Telescope diagnostics<CR>", desc = "Diagnostics" },
+      { "<leader>fw", "<cmd>Telescope grep_string<CR>", desc = "Grep word under cursor" },
+      { "<leader>/", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "Search in buffer" },
+    },
+    config = function()
+      local telescope = require("telescope")
+      local actions = require("telescope.actions")
+
+      telescope.setup({
+        defaults = {
+          sorting_strategy = "ascending",
+          layout_config = { prompt_position = "top" },
+          file_ignore_patterns = { "^.git/", "node_modules/" },
+          mappings = {
+            i = {
+              ["<C-j>"] = actions.move_selection_next,
+              ["<C-k>"] = actions.move_selection_previous,
+              ["<Esc>"] = actions.close,
+            },
+          },
+        },
+        pickers = {
+          find_files = { hidden = true }, -- show dotfiles
+        },
+      })
+
+      pcall(telescope.load_extension, "fzf")
+    end,
+  },
+}, {
+  change_detection = { notify = false },
+})
