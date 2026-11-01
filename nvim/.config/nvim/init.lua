@@ -163,7 +163,7 @@ require("lazy").setup({
     priority = 1000,
     config = function()
       require("gruvbox").setup({
-        contrast = "", -- "hard", "soft", or "" for the default
+        contrast = "soft", -- "hard", "soft", or "" for the default
         transparent_mode = false,
         italic = {
           strings = false,
