@@ -8,7 +8,6 @@ alias la="lsd -la"
 alias python="python3"
 alias pip="pip3"
 alias mkdir="mkdir -p"
-alias cp="cp -r"
 
 # colors
 # set fish_color_command green
@@ -39,3 +38,5 @@ end
 
 zoxide init fish | source
 thefuck --alias | source
+
+source ~/dotfiles/fish/conf.d/safety.fish
